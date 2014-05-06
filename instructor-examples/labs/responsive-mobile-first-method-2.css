@@ -1,0 +1,37 @@
+/*
+    HTML document would contain a single
+    stylesheet link to this file.
+*/
+
+
+/* --------- Smallest Viewports
+      Contains styles common to all viewports as well
+      as styles specific to the small viewports */
+
+selector {
+  property: value;
+}
+
+
+/* --------- Medium Viewports
+      Contains styles common to medium viewports
+      and above, overriding any small-viewport styles
+      that need to be changed */
+
+@media (min-width: 720px) {
+  selector {
+    property: value;
+  }
+}
+
+
+/* --------- Large Viewports
+      Contains styles common to large viewports
+      and above, overriding any medium-viewport and
+      small-viewport styles that need to be changed */
+
+@media (min-width: 1080px) {
+  selector {
+    property: value;
+  }
+}
