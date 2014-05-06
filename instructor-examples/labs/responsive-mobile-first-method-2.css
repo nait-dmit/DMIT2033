@@ -16,7 +16,7 @@ selector {
 /* --------- Medium Viewports
       Contains styles common to medium viewports
       and above, overriding any small-viewport styles
-      that need to be changed */
+      that need to change */
 
 @media (min-width: 720px) {
   selector {
@@ -28,7 +28,7 @@ selector {
 /* --------- Large Viewports
       Contains styles common to large viewports
       and above, overriding any medium-viewport and
-      small-viewport styles that need to be changed */
+      small-viewport styles that need to change */
 
 @media (min-width: 1080px) {
   selector {
