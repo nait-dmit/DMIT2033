@@ -1,0 +1,69 @@
+@import url(http://fonts.googleapis.com/css?family=Vollkorn:400italic,700italic,400,700);
+/*
+  Typographic Rules
+  -----------------
+
+  Landing Page Sections
+    headlines: 40px, arial bold;
+    sub-headlines: 30px, vollkorn regular;
+
+  Main Nav
+    links: 20px arial bold all-caps;
+
+  Project Slider Navigation
+    links: 20px vollkorn italic;
+
+  Pricing tables
+    headers: 40px vollkorn regular;
+    subheaders: 16px vollkorn regular;
+    table data: 12px arial regular;
+
+  Testimonials
+    name: 16px vollkorn regular;
+    company: 16px vollkorn italic;
+
+  Blog post index
+    headers: 20px vollkorn bold;
+    exerpts: 16px vollkorn regular;
+
+  Contact Form
+    input placeholders: 16px vollkorn italic;
+
+  Buttons
+    regular: 16px vollkorn regular;
+    small: 12px vollkorn regular;
+
+  Footer
+    Copyright text: 12px vollkorn regular;
+
+*/
+
+
+html {
+  font-family: "Vollkorn", georgia, serif;
+  font-size: 125%;
+  line-height: 1.5em;
+  font-weight: 100;
+
+  background-image: linear-gradient(#0ff 1px, transparent 1px);
+  background-size: auto 1.5em;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: arial, sans-serif;
+  font-weight: 900;
+  color: #333;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+p {
+  margin: 1.5rem 0;
+  color: #444;
+}
+
+.test span {
+  font-weight: 700;
+}

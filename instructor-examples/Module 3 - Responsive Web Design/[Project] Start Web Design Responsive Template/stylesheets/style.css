@@ -1,0 +1,21 @@
+/*
+  Later, we would compile our stylesheets down to a single
+  stylesheet for production.
+  Note: when using import directives remember that they have
+  to go at the top of the page
+*/
+@import url('normalize.css');
+@import url('baseline-grid.css');
+@import url('viewports/alpha.css');
+@import url('viewports/bravo.css') (min-width: 720px);
+@import url('viewports/charlie.css') (min-width: 1080px);
+
+.viewport-label::before {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 0 5px;
+  color: white;
+  font-size: 0.75em;
+  background: rgba(0,0,0,0.5);
+}
