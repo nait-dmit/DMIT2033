@@ -36,11 +36,12 @@
 //   Footer
 //     Copyright text: 12px vollkorn regular
 
-
+$serif-family: "Vollkorn", georgia, serif
+$sans-serif-family: arial, sans-serif
 
 html
-  font-family: "Vollkorn", georgia, serif
-  font-size: 100%
+  font-family: $serif-family
+  font-size: 125%
   line-height: 1.5em
   font-weight: 100
 
@@ -49,13 +50,16 @@ html
 
 
 h1, h2, h3, h4, h5, h6
-  font-family: arial, sans-serif
+  margin: 0
+  font-family: $sans-serif-family
   font-weight: 900
   color: #333
 
 
 h1
   font-size: 2em
+  line-height: 1.5em
+  margin-bottom: 0.75em
 
 
 p
@@ -66,3 +70,8 @@ p
 .test span
   font-weight: 700
 
+
+section.process h2
+  margin-bottom: 1em
+  font-family: $serif-family
+  font-weight: normal

@@ -2,17 +2,92 @@
 .viewport-label::before
   content: "Alpha Viewport"
 
+body > header
+  height: 15em
+  background: url('../images/ui/hipster-alley-sm.jpg') center center no-repeat
+  background-size: cover
+  box-shadow: inset 0px 10px 0px fade-out(#fff, 0.5)
+
+body > nav
+  margin: 0 0 0.75em 0
+  text-align: center
+  background: #fff
+
+  ul
+    margin: 0
+    padding: 0
+
+  li
+    display: inline
+
+  a
+    display: inline-block
+    padding: 0em 0.5em
+    font-family: Arial, sans-serif
+    font-weight: bold
+    font-size: 0.75em
+    color: #333
+    text-decoration: none
+    text-transform: uppercase
+
+  .brand
+    width: 4em
+    line-height: 3em
+    font-family: "Vollkorn", georgia, serif
+    font-size: 1.25em
+    text-transform: none
+    text-indent: -9999px
+    background: url('../images/ui/sprites.png') left top
+    background-size: 60em
+    background-position: 0 0.75em
+
+section.process
+  text-align: center
+  background: fade-out(#eeeeee, 0)
+  padding: 3em 0
+
+.process .icon
+  display: block
+  margin: 0 auto 1.5em auto
+  height: 3em
+  width: 4em
+  background-image: url('../images/ui/sprites.png')
+  background-size: 60em
+  background-position: 0.6em -5em
+
+.process-communication .icon
+  background-position: 0.6em -5em
+
+.process-organization .icon
+  background-position: -4.4em -5em
+
+.process-education .icon
+  background-position: -9.4em -5em
+
+.process-efficiency .icon
+  background-position: -14.4em -5em
+
+.process-creativity .icon
+  background-position: -19.4em -5em
+
+.process-accuracy .icon
+  background-position: -24.4em -5em
+
+
+
 .row
-  margin-top: 3em
   margin-left: -1em
   margin-right: -1em
 
 .column
   clear: both
   margin: 0
-  margin-bottom: 1.5em
-  padding: 1.5em 1em
-  background: fade-out(#000, 0.97)
+  margin-bottom: 3em
+  padding: 0 1em
+
+  &:last-child
+    margin-bottom: 0
+  // background: fade-out(#000, 0.97)
 
 p
   margin: 0

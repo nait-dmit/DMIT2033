@@ -1,15 +1,19 @@
 .viewport-label::before
   content: "Bravo Viewport"
 
+
+body > header
+  background-image: url('../images/ui/hipster-alley-md.jpg')
+
 .column
   clear: inherit
   max-width: 50%
   float: left
-  border-right: 1px solid fade-out(#000, 0.9)
 
   &:nth-child(2n+1)
     clear: both
 
-  &:nth-child(2n)
-    border-right: none
+  &:nth-last-child(2)
+    margin-bottom: 0
+
 
