@@ -1,0 +1,38 @@
+*
+  box-sizing: border-box
+
+.container
+  margin: 1em
+
+
+@import baseline-grid
+
+.viewport-label
+  margin: 0
+
+  &::before
+    position: absolute
+    bottom: 0
+    right: 0
+    padding: 0 5px
+    color: white
+    font-size: 0.75em
+    background: rgba(0,0,0,0.5)
+
+
+// 16px = 1em
+// 480px = 30em
+// Must remember that media query ems are BEFORE any
+// styling adjustments. They're based on the default
+// browser font size; so normally 16px.
+
+@import viewports/alpha
+
+@media (min-width: 30em)
+  @import viewports/bravo
+
+@media (min-width: 60em)
+  @import viewports/charlie
+
+@media (min-width: 72em)
+  @import viewports/delta
