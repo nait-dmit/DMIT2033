@@ -1,13 +1,9 @@
 .viewport-label::before
   content: "Bravo Viewport"
 
-
-body > header
-  background-image: url('../images/ui/hipster-alley-md.jpg')
-
 .column
   clear: inherit
-  max-width: 50%
+  width: 50%
   float: left
 
   &:nth-child(2n+1)
@@ -17,3 +13,16 @@ body > header
     margin-bottom: 0
 
 
+
+body > header
+  background-image: url('../images/ui/hipster-alley-md.jpg')
+
+body > nav
+  a
+    margin-left: 0.25em
+
+  .column
+    width: 100%
+
+.process .icon
+  display: block

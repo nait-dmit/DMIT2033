@@ -2,11 +2,8 @@
   content: "Charlie Viewport"
 
 
-body > header
-  background-image: url('../images/ui/hipster-alley-lg.jpg')
-
 .column
-  max-width: 33.3333333%
+  width: 33.3333333%
   float: left
 
   &:nth-child(2n+1)
@@ -17,3 +14,24 @@ body > header
 
   &:nth-last-child(3)
     margin-bottom: 0
+
+
+body > header
+  height: 18em
+  background-image: url('../images/ui/hipster-alley-lg.jpg')
+
+body > nav
+  text-align: left
+
+  a
+    margin-left: 0.5em
+
+  ul
+    float: right
+    line-height: 3em
+
+  .column:first-child
+    width: 25%
+
+  .column:last-child
+    width: 75%

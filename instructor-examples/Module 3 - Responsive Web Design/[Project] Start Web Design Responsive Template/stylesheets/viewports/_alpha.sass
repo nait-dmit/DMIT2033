@@ -2,6 +2,28 @@
 .viewport-label::before
   content: "Alpha Viewport"
 
+.row
+  margin-left: -1em
+  margin-right: -1em
+
+.column
+  clear: both
+  margin: 0
+  margin-bottom: 3em
+  padding: 0 1em
+
+  &:last-child
+    margin-bottom: 0
+  // background: fade-out(#000, 0.97)
+
+p
+  margin: 0
+  margin-bottom: 1em
+
+  &:last-child
+    margin-bottom: 0
+
+
 body > header
   height: 15em
   background: url('../images/ui/hipster-alley-sm.jpg') center center no-repeat
@@ -9,7 +31,7 @@ body > header
   box-shadow: inset 0px 10px 0px fade-out(#fff, 0.5)
 
 body > nav
-  margin: 0 0 0.75em 0
+  padding: 0.75em 0
   text-align: center
   background: #fff
 
@@ -29,17 +51,27 @@ body > nav
     color: #333
     text-decoration: none
     text-transform: uppercase
+    line-height: 2
 
   .brand
     width: 4em
-    line-height: 3em
     font-family: "Vollkorn", georgia, serif
-    font-size: 1.25em
+    font-size: 1em
+    line-height: 3em
     text-transform: none
     text-indent: -9999px
     background: url('../images/ui/sprites.png') left top
     background-size: 60em
     background-position: 0 0.75em
+
+  .column
+    margin-bottom: 0
+
+body.landing-page > nav li:first-child a
+  color: #fff
+  background: $brand-primary
+  border-radius: 3px
+
 
 section.process
   text-align: center
@@ -47,7 +79,7 @@ section.process
   padding: 3em 0
 
 .process .icon
-  display: block
+  display: none
   margin: 0 auto 1.5em auto
   height: 3em
   width: 4em
@@ -75,23 +107,3 @@ section.process
 
 
 
-.row
-  margin-left: -1em
-  margin-right: -1em
-
-.column
-  clear: both
-  margin: 0
-  margin-bottom: 3em
-  padding: 0 1em
-
-  &:last-child
-    margin-bottom: 0
-  // background: fade-out(#000, 0.97)
-
-p
-  margin: 0
-  margin-bottom: 1em
-
-  &:last-child
-    margin-bottom: 0
