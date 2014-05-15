@@ -1,0 +1,60 @@
+/*
+Syntax error: File to import not found or unreadable: baseline-grid.
+              Load path: /Users/christiannaths/Projects/NAIT/14013 DMIT2033 Web Design & Usability II/instructor-examples/Module 3 - Responsive Web Design/[Project] Start Web Design Responsive Template
+        on line 16 of ./stylesheets/old-code/style.sass
+
+11: 
+12: 
+13: $brand-primary: #ee5a47
+14: $brand-dark-neutral: #443d43
+15: 
+16: @import baseline-grid
+17: 
+18: .viewport-label
+19:   margin: 0
+20: 
+21:   &::before
+
+Backtrace:
+./stylesheets/old-code/style.sass:16
+/Users/christiannaths/.gem/ruby/2.0.0/gems/sass-3.3.3/lib/sass/tree/import_node.rb:66:in `rescue in import'
+/Users/christiannaths/.gem/ruby/2.0.0/gems/sass-3.3.3/lib/sass/tree/import_node.rb:45:in `import'
+/Users/christiannaths/.gem/ruby/2.0.0/gems/sass-3.3.3/lib/sass/tree/import_node.rb:28:in `imported_file'
+/Users/christiannaths/.gem/ruby/2.0.0/gems/sass-3.3.3/lib/sass/tree/import_node.rb:37:in `css_import?'
+/Users/christiannaths/.gem/ruby/2.0.0/gems/sass-3.3.3/lib/sass/tree/visitors/perform.rb:283:in `visit_import'
+/Users/christiannaths/.gem/ruby/2.0.0/gems/sass-3.3.3/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/christiannaths/.gem/ruby/2.0.0/gems/sass-3.3.3/lib/sass/tree/visitors/perform.rb:152:in `block in visit'
+/Users/christiannaths/.gem/ruby/2.0.0/gems/sass-3.3.3/lib/sass/stack.rb:79:in `block in with_base'
+/Users/christiannaths/.gem/ruby/2.0.0/gems/sass-3.3.3/lib/sass/stack.rb:121:in `with_frame'
+/Users/christiannaths/.gem/ruby/2.0.0/gems/sass-3.3.3/lib/sass/stack.rb:79:in `with_base'
+/Users/christiannaths/.gem/ruby/2.0.0/gems/sass-3.3.3/lib/sass/tree/visitors/perform.rb:152:in `visit'
+/Users/christiannaths/.gem/ruby/2.0.0/gems/sass-3.3.3/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Users/christiannaths/.gem/ruby/2.0.0/gems/sass-3.3.3/lib/sass/tree/visitors/base.rb:52:in `map'
+/Users/christiannaths/.gem/ruby/2.0.0/gems/sass-3.3.3/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Users/christiannaths/.gem/ruby/2.0.0/gems/sass-3.3.3/lib/sass/tree/visitors/perform.rb:161:in `block in visit_children'
+/Users/christiannaths/.gem/ruby/2.0.0/gems/sass-3.3.3/lib/sass/tree/visitors/perform.rb:173:in `with_environment'
+/Users/christiannaths/.gem/ruby/2.0.0/gems/sass-3.3.3/lib/sass/tree/visitors/perform.rb:160:in `visit_children'
+/Users/christiannaths/.gem/ruby/2.0.0/gems/sass-3.3.3/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Users/christiannaths/.gem/ruby/2.0.0/gems/sass-3.3.3/lib/sass/tree/visitors/perform.rb:180:in `visit_root'
+/Users/christiannaths/.gem/ruby/2.0.0/gems/sass-3.3.3/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/christiannaths/.gem/ruby/2.0.0/gems/sass-3.3.3/lib/sass/tree/visitors/perform.rb:151:in `visit'
+/Users/christiannaths/.gem/ruby/2.0.0/gems/sass-3.3.3/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/Users/christiannaths/.gem/ruby/2.0.0/gems/sass-3.3.3/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Users/christiannaths/.gem/ruby/2.0.0/gems/sass-3.3.3/lib/sass/tree/root_node.rb:20:in `render'
+/Users/christiannaths/.gem/ruby/2.0.0/gems/sass-3.3.3/lib/sass/engine.rb:274:in `render'
+/Users/christiannaths/.gem/ruby/2.0.0/gems/sass-3.3.3/lib/sass/plugin/compiler.rb:414:in `update_stylesheet'
+/Users/christiannaths/.gem/ruby/2.0.0/gems/sass-3.3.3/lib/sass/plugin/compiler.rb:189:in `block in update_stylesheets'
+/Users/christiannaths/.gem/ruby/2.0.0/gems/sass-3.3.3/lib/sass/plugin/compiler.rb:186:in `each'
+/Users/christiannaths/.gem/ruby/2.0.0/gems/sass-3.3.3/lib/sass/plugin/compiler.rb:186:in `update_stylesheets'
+/Users/christiannaths/.gem/ruby/2.0.0/gems/sass-3.3.3/lib/sass/plugin/compiler.rb:393:in `on_file_changed'
+/Users/christiannaths/.gem/ruby/2.0.0/gems/sass-3.3.3/lib/sass/plugin/compiler.rb:248:in `block in watch'
+/Users/christiannaths/.gem/ruby/2.0.0/gems/listen-2.7.3/lib/listen/listener.rb:149:in `call'
+/Users/christiannaths/.gem/ruby/2.0.0/gems/listen-2.7.3/lib/listen/listener.rb:149:in `block in _wait_for_changes'
+/Users/christiannaths/.gem/ruby/2.0.0/gems/listen-2.7.3/lib/listen/listener.rb:138:in `loop'
+/Users/christiannaths/.gem/ruby/2.0.0/gems/listen-2.7.3/lib/listen/listener.rb:138:in `_wait_for_changes'
+/Users/christiannaths/.gem/ruby/2.0.0/gems/listen-2.7.3/lib/listen/listener.rb:42:in `block in start'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: File to import not found or unreadable: baseline-grid.\A               Load path: /Users/christiannaths/Projects/NAIT/14013 DMIT2033 Web Design & Usability II/instructor-examples/Module 3 - Responsive Web Design/[Project] Start Web Design Responsive Template\A         on line 16 of ./stylesheets/old-code/style.sass\A \A 11: \A 12: \A 13: $brand-primary: #ee5a47\A 14: $brand-dark-neutral: #443d43\A 15: \A 16: @import baseline-grid\A 17: \A 18: .viewport-label\A 19:   margin: 0\A 20: \A 21:   &::before"; }
