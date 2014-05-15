@@ -2,6 +2,11 @@
 .viewport-label::before
   content: "Alpha Viewport"
 
+
+// ------------------------------------------------------ Elements
+body
+  color: $brand-dark-neutral
+
 .row
   margin-left: -1em
   margin-right: -1em
@@ -18,11 +23,31 @@
 
 p
   margin: 0
-  margin-bottom: 1em
+  margin-bottom: 1.5em
 
   &:last-child
     margin-bottom: 0
 
+.button
+  display: inline-block
+  padding: 0.75em 1em
+  margin-top: 0.375em
+  margin-bottom: 0.375em
+  font-size: 0.8em
+  line-height: 1.5
+  text-decoration: none
+  border-radius: 20px
+
+  &.button-default
+    color: #fff
+    background: $brand-dark-neutral
+
+  &.button-primary
+    color: #fff
+    background: $brand-primary
+
+
+// ------------------------------------------------------ Contexts
 
 body > header
   height: 15em
@@ -45,7 +70,7 @@ body > nav
   a
     display: inline-block
     padding: 0em 0.5em
-    font-family: Arial, sans-serif
+    font-family: $sans-serif-family
     font-weight: bold
     font-size: 0.75em
     color: #333
@@ -55,7 +80,7 @@ body > nav
 
   .brand
     width: 4em
-    font-family: "Vollkorn", georgia, serif
+    font-family: $serif-family
     font-size: 1em
     line-height: 3em
     text-transform: none
@@ -73,10 +98,22 @@ body.landing-page > nav li:first-child a
   border-radius: 3px
 
 
+body > section
+  padding: 3em 0
+
+section.intro
+  text-align: center
+  background: fade-out(#fff, 0)
+
+.intro
+  .button
+    margin-left: 0.5em
+    margin-right: 0.5em
+    vertical-align: middle
+
 section.process
   text-align: center
   background: fade-out(#eeeeee, 0)
-  padding: 3em 0
 
 .process .icon
   display: none

@@ -12,80 +12,99 @@
 html { font-family: "Vollkorn", georgia, serif; font-size: 125%; line-height: 1.5em; font-weight: 100; background-image: linear-gradient(cyan 1px, transparent 1px); background-size: auto 1.5em; }
 
 /* line 52, _baseline-grid.sass */
-h1, h2, h3, h4, h5, h6 { margin: 0; font-family: arial, sans-serif; font-weight: 900; color: #333333; }
+h1, h2, h3, h4, h5, h6 { margin: 0; font-family: arial, sans-serif; font-weight: 900; }
 
-/* line 59, _baseline-grid.sass */
+/* line 58, _baseline-grid.sass */
 h1 { font-size: 2em; line-height: 1.5em; margin-bottom: 0.75em; }
 
-/* line 65, _baseline-grid.sass */
-p { margin: 1.5rem 0; color: #444444; }
+/* line 64, _baseline-grid.sass */
+p { margin: 1.5em 0; }
 
-/* line 70, _baseline-grid.sass */
+/* line 68, _baseline-grid.sass */
 section.process h2 { margin-bottom: 1em; font-family: "Vollkorn", georgia, serif; font-weight: normal; }
 
-/* line 17, style.sass */
+/* line 18, style.sass */
 .viewport-label { margin: 0; }
-/* line 20, style.sass */
+/* line 21, style.sass */
 .viewport-label::before { position: fixed; bottom: 0; right: 0; padding: 0 5px; color: white; font-size: 0.75em; background: rgba(0, 0, 0, 0.5); }
 
 /* TODO: remove this before launch */
 /* line 2, viewports/_alpha.sass */
 .viewport-label::before { content: "Alpha Viewport"; }
 
-/* line 5, viewports/_alpha.sass */
+/* line 7, viewports/_alpha.sass */
+body { color: #443d43; }
+
+/* line 10, viewports/_alpha.sass */
 .row { margin-left: -1em; margin-right: -1em; }
 
-/* line 9, viewports/_alpha.sass */
+/* line 14, viewports/_alpha.sass */
 .column { clear: both; margin: 0; margin-bottom: 3em; padding: 0 1em; }
-/* line 15, viewports/_alpha.sass */
+/* line 20, viewports/_alpha.sass */
 .column:last-child { margin-bottom: 0; }
 
-/* line 19, viewports/_alpha.sass */
-p { margin: 0; margin-bottom: 1em; }
-/* line 23, viewports/_alpha.sass */
+/* line 24, viewports/_alpha.sass */
+p { margin: 0; margin-bottom: 1.5em; }
+/* line 28, viewports/_alpha.sass */
 p:last-child { margin-bottom: 0; }
 
-/* line 27, viewports/_alpha.sass */
+/* line 31, viewports/_alpha.sass */
+.button { display: inline-block; padding: 0.75em 1em; margin-top: 0.375em; margin-bottom: 0.375em; font-size: 0.8em; line-height: 1.5; text-decoration: none; border-radius: 20px; }
+/* line 41, viewports/_alpha.sass */
+.button.button-default { color: white; background: #443d43; }
+/* line 45, viewports/_alpha.sass */
+.button.button-primary { color: white; background: #ee5a47; }
+
+/* line 52, viewports/_alpha.sass */
 body > header { height: 15em; background: url("../images/ui/hipster-alley-sm.jpg") center center no-repeat; background-size: cover; box-shadow: inset 0px 10px 0px rgba(255, 255, 255, 0.5); }
 
-/* line 33, viewports/_alpha.sass */
+/* line 58, viewports/_alpha.sass */
 body > nav { padding: 0.75em 0; text-align: center; background: white; }
-/* line 38, viewports/_alpha.sass */
+/* line 63, viewports/_alpha.sass */
 body > nav ul { margin: 0; padding: 0; }
-/* line 42, viewports/_alpha.sass */
-body > nav li { display: inline; }
-/* line 45, viewports/_alpha.sass */
-body > nav a { display: inline-block; padding: 0em 0.5em; font-family: Arial, sans-serif; font-weight: bold; font-size: 0.75em; color: #333333; text-decoration: none; text-transform: uppercase; line-height: 2; }
-/* line 56, viewports/_alpha.sass */
-body > nav .brand { width: 4em; font-family: "Vollkorn", georgia, serif; font-size: 1em; line-height: 3em; text-transform: none; text-indent: -9999px; background: url("../images/ui/sprites.png") left top; background-size: 60em; background-position: 0 0.75em; }
 /* line 67, viewports/_alpha.sass */
+body > nav li { display: inline; }
+/* line 70, viewports/_alpha.sass */
+body > nav a { display: inline-block; padding: 0em 0.5em; font-family: arial, sans-serif; font-weight: bold; font-size: 0.75em; color: #333333; text-decoration: none; text-transform: uppercase; line-height: 2; }
+/* line 81, viewports/_alpha.sass */
+body > nav .brand { width: 4em; font-family: "Vollkorn", georgia, serif; font-size: 1em; line-height: 3em; text-transform: none; text-indent: -9999px; background: url("../images/ui/sprites.png") left top; background-size: 60em; background-position: 0 0.75em; }
+/* line 92, viewports/_alpha.sass */
 body > nav .column { margin-bottom: 0; }
 
-/* line 70, viewports/_alpha.sass */
+/* line 95, viewports/_alpha.sass */
 body.landing-page > nav li:first-child a { color: white; background: #ee5a47; border-radius: 3px; }
 
-/* line 76, viewports/_alpha.sass */
-section.process { text-align: center; background: #eeeeee; padding: 3em 0; }
+/* line 101, viewports/_alpha.sass */
+body > section { padding: 3em 0; }
 
-/* line 81, viewports/_alpha.sass */
+/* line 104, viewports/_alpha.sass */
+section.intro { text-align: center; background: white; }
+
+/* line 109, viewports/_alpha.sass */
+.intro .button { margin-left: 0.5em; margin-right: 0.5em; vertical-align: middle; }
+
+/* line 114, viewports/_alpha.sass */
+section.process { text-align: center; background: #eeeeee; }
+
+/* line 118, viewports/_alpha.sass */
 .process .icon { display: none; margin: 0 auto 1.5em auto; height: 3em; width: 4em; background-image: url("../images/ui/sprites.png"); background-size: 60em; background-position: 0.6em -5em; }
 
-/* line 90, viewports/_alpha.sass */
+/* line 127, viewports/_alpha.sass */
 .process-communication .icon { background-position: 0.6em -5em; }
 
-/* line 93, viewports/_alpha.sass */
+/* line 130, viewports/_alpha.sass */
 .process-organization .icon { background-position: -4.4em -5em; }
 
-/* line 96, viewports/_alpha.sass */
+/* line 133, viewports/_alpha.sass */
 .process-education .icon { background-position: -9.4em -5em; }
 
-/* line 99, viewports/_alpha.sass */
+/* line 136, viewports/_alpha.sass */
 .process-efficiency .icon { background-position: -14.4em -5em; }
 
-/* line 102, viewports/_alpha.sass */
+/* line 139, viewports/_alpha.sass */
 .process-creativity .icon { background-position: -19.4em -5em; }
 
-/* line 105, viewports/_alpha.sass */
+/* line 142, viewports/_alpha.sass */
 .process-accuracy .icon { background-position: -24.4em -5em; }
 
 @media (min-width: 30em) { /* line 1, viewports/_bravo.sass */
