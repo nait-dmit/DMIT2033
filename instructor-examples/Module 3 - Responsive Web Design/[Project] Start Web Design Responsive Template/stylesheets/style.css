@@ -143,6 +143,16 @@ body.landing-page .site-nav ul li:first-child a { color: white; background: #ee5
   .process .grid-frame:nth-child(3n+1) { clear: both; }
   /* line 33, contexts/_process-section.sass */
   .process .grid-frame:nth-last-child(3) { margin-bottom: 0; } }
+/* line 36, contexts/_process-section.sass */
+.process .process-organization .process-icon { background-position: -4.4em -5em; }
+/* line 39, contexts/_process-section.sass */
+.process .process-education .process-icon { background-position: -9.4em -5em; }
+/* line 42, contexts/_process-section.sass */
+.process .process-efficiency .process-icon { background-position: -14.4em -5em; }
+/* line 45, contexts/_process-section.sass */
+.process .process-creativity .process-icon { background-position: -19.4em -5em; }
+/* line 48, contexts/_process-section.sass */
+.process .process-accuracy .process-icon { background-position: -24.4em -5em; }
 
 /* line 3, contexts/_portfolio-section.sass */
 .portfolio { text-align: center; }
