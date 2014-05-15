@@ -1,0 +1,185 @@
+// ------------------------------------------------------------
+// ------------------------------------------------------------Site Nav
+body.landing-page .site-nav ul li:first-child a
+  color: #fff
+  background: $brand-primary
+  border-radius: 0.5em
+
+.site-nav
+  text-align: center
+
+  .grid-frame
+    margin-top: 1.5em
+    margin-bottom: 1.5em
+
+  .grid-frame:first-child
+    margin-bottom: 0
+
+  .grid-frame:last-child
+    margin-top: 0
+
+  li
+    display: inline
+
+  a
+    display: inline-block
+    padding: 0 0.25em
+    font-family: $sans-serif-stack
+    font-weight: 900
+
+  li a
+    font-size: 0.8em
+    line-height: (30 / 16)
+    color: $brand-dark-neutral
+
+  @media (min-width: $breakpoint-1)
+    li a
+      padding: 0 0.5em
+
+  @media (min-width: $breakpoint-1-5)
+    .grid-frame
+      clear: none
+      float: left
+
+    .grid-frame:first-child
+      width: 25%
+      text-align: left
+
+    .grid-frame:last-child
+      width: 75%
+      margin-top: 1.5em
+      margin-bottom: 0
+      text-align: right
+
+    li a
+      line-height: (30 / 16)
+      padding: 0 0.75em
+      margin-top: (15 / 16) * 1em
+      margin-bottom: (15 / 16) * 1em
+
+    .branding-logo
+      background-position: 0 0.5em
+
+  @media (min-width: $breakpoint-2-5)
+    li a
+      padding: 0 1em
+
+
+// ------------------------------------------------------------
+// ------------------------------------------------------------Header Banner
+.branding-banner
+  height: 9em
+  background-image: url('../images/ui/tagline.png'), url('../images/ui/hipster-alley-md.jpg')
+  background-size: auto 75%, cover
+  background-repeat: no-repeat, no-repeat
+  background-position: center center, center center
+  box-shadow: inset 0px 10px 0px fade-out(#fff, 0.5)
+
+  @media (min-width: $breakpoint-1)
+    height: 12em
+
+  @media (min-width: $breakpoint-1-5)
+    height: 15em
+
+  @media (min-width: $breakpoint-2)
+    height: 24em
+    background-image: url('../images/ui/tagline.png'), url('../images/ui/hipster-alley-lg.jpg')
+    background-size: auto 50%, cover
+
+// ------------------------------------------------------------
+// ------------------------------------------------------------Intro Section
+.intro
+  text-align: center
+
+// ------------------------------------------------------------
+// ------------------------------------------------------------Process Section
+.process
+  text-align: center
+  background: $alt-background
+
+  .process-icon
+    margin: 0 auto 1.5em auto
+
+  // ---------------------------------------Grid
+  @media (min-width: $breakpoint-1)
+    .grid-frame
+      clear: none
+      width: 50%
+      float: left
+
+    .grid-frame:nth-child(2n+1)
+      clear: both
+
+    .grid-frame:nth-last-child(2)
+      margin-bottom: 0
+
+  @media (min-width: $breakpoint-2)
+    .grid-frame
+      width: 33.3333333%
+      float: left
+
+    .grid-frame:nth-child(2n+1)
+      clear: none
+
+    .grid-frame:nth-child(3n+1)
+      clear: both
+
+    .grid-frame:nth-last-child(3)
+      margin-bottom: 0
+
+
+// ------------------------------------------------------------
+// ------------------------------------------------------------Portfolio Section
+.portfolio
+  text-align: center
+
+  h1
+    margin-bottom: 0
+
+  // ---------------------------------------Grid
+  .grid-frame
+    margin-bottom: 1.5em
+
+  @media (min-width: $breakpoint-0-5)
+    .grid
+      margin: 0 auto
+      max-width: $breakpoint-0-5
+
+  @media (min-width: $breakpoint-2)
+    .grid
+      max-width: $breakpoint-1-5
+
+    .grid-frame
+      clear: none
+      width: 50%
+      float: left
+
+    .grid-frame:nth-child(2n+1)
+      clear: both
+
+    .grid-frame:nth-last-child(2)
+      margin-bottom: 0
+
+  nav
+    font-style: italic
+    color: #939393
+    margin-bottom: 1.5em
+
+    li
+      display: inline
+
+    li:after
+      content: " / "
+
+    li:last-child:after
+      content: ""
+
+    a
+      color: #939393
+      padding: 0 0.25em
+
+    a.active
+      color: $brand-primary
+
+// ------------------------------------------------------------
+// ------------------------------------------------------------
