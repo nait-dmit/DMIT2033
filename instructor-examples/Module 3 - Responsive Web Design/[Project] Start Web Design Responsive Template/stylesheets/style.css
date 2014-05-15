@@ -25,60 +25,60 @@
 /* line 48, elements/_all.sass */
 .clearfix:after { content: ""; display: table; clear: both; }
 
-/* line 55, elements/_all.sass */
+/* line 53, elements/_all.sass */
+.baseline-grid { background-image: linear-gradient(cyan 1px, transparent 1px); background-size: auto 1.5em; }
+
+/* line 59, elements/_all.sass */
 html { font-family: "Vollkorn", georgia, serif; font-size: 125%; line-height: 1.5em; font-weight: normal; }
 
-/* line 63, elements/_all.sass */
+/* line 65, elements/_all.sass */
 body { color: #443d43; }
 
-/* line 66, elements/_all.sass */
+/* line 68, elements/_all.sass */
 h1, h2, h3, h4, h5, h6, ul, ol, li, p { margin: 0; padding: 0; }
 
-/* line 70, elements/_all.sass */
+/* line 72, elements/_all.sass */
 h1 { font-family: arial, sans-serif; font-weight: 900; font-size: 2em; line-height: 1.5; margin-bottom: 0.75em; }
 
-/* line 77, elements/_all.sass */
+/* line 79, elements/_all.sass */
 h2 { font-family: "Vollkorn", georgia, serif; font-weight: normal; font-size: 1.5em; line-height: 1; margin-bottom: 1em; }
 
-/* line 84, elements/_all.sass */
+/* line 86, elements/_all.sass */
 p { margin-bottom: 1.5em; }
 
-/* line 87, elements/_all.sass */
+/* line 89, elements/_all.sass */
 p:last-child { margin-bottom: 0; }
 
-/* line 92, elements/_all.sass */
+/* line 94, elements/_all.sass */
 .container { padding: 0 1em; }
-/* line 95, elements/_all.sass */
+/* line 97, elements/_all.sass */
 .container .grid { margin-left: -1em; margin-right: -1em; }
 
-/* line 99, elements/_all.sass */
+/* line 101, elements/_all.sass */
 .grid-frame { clear: both; margin: 0; margin-bottom: 3em; padding: 0 1em; }
 
-/* line 105, elements/_all.sass */
+/* line 107, elements/_all.sass */
 .grid-frame:last-child { margin-bottom: 0; }
 
-@media (min-width: 80em) { /* line 111, elements/_all.sass */
+@media (min-width: 80em) { /* line 113, elements/_all.sass */
   .container { max-width: 64em; margin: 0 auto; } }
-/* line 118, elements/_all.sass */
+/* line 120, elements/_all.sass */
 .button { display: inline-block; padding: 0.75em 1em; margin-top: 0.375em; margin-bottom: 0.375em; font-size: 0.8em; line-height: 1.5; text-decoration: none; border-radius: 20px; }
-/* line 128, elements/_all.sass */
+/* line 130, elements/_all.sass */
 .button.button-default { color: white; background: #443d43; }
-/* line 132, elements/_all.sass */
+/* line 134, elements/_all.sass */
 .button.button-primary { color: white; background: #ee5a47; }
 
-/* line 138, elements/_all.sass */
+/* line 140, elements/_all.sass */
 a { display: inline-block; text-decoration: none; color: #ee5a47; }
 
-/* line 145, elements/_all.sass */
+/* line 147, elements/_all.sass */
 .branding-logo { width: 4em; font-family: "Vollkorn", georgia, serif; font-size: 1em; line-height: 3em; text-transform: none; text-indent: -9999px; background: url("../images/ui/sprites.png") left top; background-size: 60em; background-position: 0 0.75em; }
 
-/* line 158, elements/_all.sass */
-.process-icon { display: block; height: 3em; width: 4em; background-image: url("../images/ui/sprites.png"); background-size: 60em; background-position: 0.6em -5em; }
-
-/* line 168, elements/_all.sass */
+/* line 160, elements/_all.sass */
 img { display: block; max-width: 100%; }
 
-/* line 174, elements/_all.sass */
+/* line 166, elements/_all.sass */
 body > section { padding: 3em 0; }
 
 /* line 3, contexts/_site-nav.sass */
@@ -124,35 +124,61 @@ body.landing-page .site-nav ul li:first-child a { color: white; background: #ee5
 
 /* line 3, contexts/_intro-section.sass */
 .intro { text-align: center; }
+/* line 7, contexts/_intro-section.sass */
+.intro .button { font-size: 0.7em; margin: 0.375em 0; padding: 1em 0.5em; }
+/* line 12, contexts/_intro-section.sass */
+.intro .button:first-child { border-radius: 1em 0 0 1em; }
+/* line 15, contexts/_intro-section.sass */
+.intro .button:last-child { border-radius: 0 1em 1em 0; }
+@media (min-width: 24em) { /* line 19, contexts/_intro-section.sass */
+  .intro .button { padding: 1em 1.5em; } }
+@media (min-width: 32em) { /* line 23, contexts/_intro-section.sass */
+  .intro .button { font-size: 0.8em; margin: 0.3125em 0.625em; padding: 0.8125em 1.5em; }
+  /* line 29, contexts/_intro-section.sass */
+  .intro .button:first-child { border-radius: 1em; }
+  /* line 32, contexts/_intro-section.sass */
+  .intro .button:last-child { border-radius: 1em; } }
 
 /* line 3, contexts/_process-section.sass */
-.process { text-align: center; background: #eeeeee; }
-/* line 7, contexts/_process-section.sass */
-.process .process-icon { margin: 0 auto 1.5em auto; }
-@media (min-width: 32em) { /* line 11, contexts/_process-section.sass */
+.process { text-align: center; background-color: #eeeeee; }
+/* line 8, contexts/_process-section.sass */
+.process .process-icon { display: block; height: 2.5em; width: 3em; margin: 0 auto 0.5em auto; background-image: url("../images/ui/sprites.png"); background-size: 50em; background-position: 0.6em -4em; }
+/* line 17, contexts/_process-section.sass */
+.process .process-organization .process-icon { background-position: -3.85em -4em; }
+/* line 20, contexts/_process-section.sass */
+.process .process-education .process-icon { background-position: -8em -4em; }
+/* line 23, contexts/_process-section.sass */
+.process .process-efficiency .process-icon { background-position: -12.15em -4em; }
+/* line 26, contexts/_process-section.sass */
+.process .process-creativity .process-icon { background-position: -16.3em -4em; }
+/* line 29, contexts/_process-section.sass */
+.process .process-accuracy .process-icon { background-position: -20.45em -4em; }
+@media (min-width: 32em) { /* line 33, contexts/_process-section.sass */
   .process .grid-frame { clear: none; width: 50%; float: left; }
-  /* line 16, contexts/_process-section.sass */
+  /* line 38, contexts/_process-section.sass */
   .process .grid-frame:nth-child(2n+1) { clear: both; }
-  /* line 19, contexts/_process-section.sass */
+  /* line 41, contexts/_process-section.sass */
   .process .grid-frame:nth-last-child(2) { margin-bottom: 0; } }
-@media (min-width: 60em) { /* line 23, contexts/_process-section.sass */
+@media (min-width: 46em) { /* line 45, contexts/_process-section.sass */
+  .process .process-icon { height: 3em; width: 3.5em; margin: 0 auto 1.5em auto; background-size: 60em; background-position: 0.6em -5em; }
+  /* line 52, contexts/_process-section.sass */
+  .process .process-organization .process-icon { background-position: -4.7em -5em; }
+  /* line 55, contexts/_process-section.sass */
+  .process .process-education .process-icon { background-position: -9.4em -5em; }
+  /* line 58, contexts/_process-section.sass */
+  .process .process-efficiency .process-icon { background-position: -14.65em -5em; }
+  /* line 61, contexts/_process-section.sass */
+  .process .process-creativity .process-icon { background-position: -19.5em -5em; }
+  /* line 64, contexts/_process-section.sass */
+  .process .process-accuracy .process-icon { background-position: -24.6em -5em; } }
+@media (min-width: 60em) { /* line 69, contexts/_process-section.sass */
   .process .grid-frame { width: 33.33333%; float: left; }
-  /* line 27, contexts/_process-section.sass */
+  /* line 73, contexts/_process-section.sass */
   .process .grid-frame:nth-child(2n+1) { clear: none; }
-  /* line 30, contexts/_process-section.sass */
+  /* line 76, contexts/_process-section.sass */
   .process .grid-frame:nth-child(3n+1) { clear: both; }
-  /* line 33, contexts/_process-section.sass */
+  /* line 79, contexts/_process-section.sass */
   .process .grid-frame:nth-last-child(3) { margin-bottom: 0; } }
-/* line 36, contexts/_process-section.sass */
-.process .process-organization .process-icon { background-position: -4.4em -5em; }
-/* line 39, contexts/_process-section.sass */
-.process .process-education .process-icon { background-position: -9.4em -5em; }
-/* line 42, contexts/_process-section.sass */
-.process .process-efficiency .process-icon { background-position: -14.4em -5em; }
-/* line 45, contexts/_process-section.sass */
-.process .process-creativity .process-icon { background-position: -19.4em -5em; }
-/* line 48, contexts/_process-section.sass */
-.process .process-accuracy .process-icon { background-position: -24.4em -5em; }
 
 /* line 3, contexts/_portfolio-section.sass */
 .portfolio { text-align: center; }

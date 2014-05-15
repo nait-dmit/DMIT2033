@@ -1,4 +1,33 @@
 // ------------------------------------------------------------
 // ------------------------------------------------------------Intro Section
 .intro
+  // @extend .baseline-grid
   text-align: center
+
+  .button
+    font-size: (14 / 20) * 1em
+    margin: ((6 / 16) * 1em) 0
+    padding: 1em 0.5em
+
+  .button:first-child
+    border-radius: 1em 0 0 1em
+
+  .button:last-child
+    border-radius: 0 1em 1em 0
+
+  @media (min-width: $breakpoint-0-5)
+    .button
+      padding: 1em 1.5em
+
+  @media (min-width: $breakpoint-1)
+    .button
+      font-size: (16 / 20) * 1em
+      margin: ((5 / 16) * 1em) ((10 / 16) * 1em)
+      padding: ((13 / 16) * 1em) 1.5em
+
+
+    .button:first-child
+      border-radius: 1em
+
+    .button:last-child
+      border-radius: 1em

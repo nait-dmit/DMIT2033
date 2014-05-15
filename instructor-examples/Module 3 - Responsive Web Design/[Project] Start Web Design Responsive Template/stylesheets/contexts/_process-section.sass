@@ -1,11 +1,33 @@
 // ------------------------------------------------------------
 // ------------------------------------------------------------Process Section
 .process
+  // @extend .baseline-grid
   text-align: center
-  background: $alt-background
+  background-color: $alt-background
 
   .process-icon
-    margin: 0 auto 1.5em auto
+    display: block
+    height: 2.5em
+    width: 3em
+    margin: 0 auto 0.5em auto
+    background-image: url('../images/ui/sprites.png')
+    background-size: 50em
+    background-position: 0.6em -4em
+
+  .process-organization .process-icon
+    background-position: -3.85em -4em
+
+  .process-education .process-icon
+    background-position: -8em -4em
+
+  .process-efficiency .process-icon
+    background-position: -12.15em -4em
+
+  .process-creativity .process-icon
+    background-position: -16.3em -4em
+
+  .process-accuracy .process-icon
+    background-position: -20.45em -4em
 
   @media (min-width: $breakpoint-1)
     .grid-frame
@@ -18,6 +40,30 @@
 
     .grid-frame:nth-last-child(2)
       margin-bottom: 0
+
+  @media (min-width: $breakpoint-1-5)
+    .process-icon
+      height: 3em
+      width: 3.5em
+      margin: 0 auto 1.5em auto
+      background-size: 60em
+      background-position: 0.6em -5em
+
+    .process-organization .process-icon
+      background-position: -4.7em -5em
+
+    .process-education .process-icon
+      background-position: -9.4em -5em
+
+    .process-efficiency .process-icon
+      background-position: -14.65em -5em
+
+    .process-creativity .process-icon
+      background-position: -19.5em -5em
+
+    .process-accuracy .process-icon
+      background-position: -24.6em -5em
+
 
   @media (min-width: $breakpoint-2)
     .grid-frame
@@ -33,17 +79,3 @@
     .grid-frame:nth-last-child(3)
       margin-bottom: 0
 
-  .process-organization .process-icon
-    background-position: -4.4em -5em
-
-  .process-education .process-icon
-    background-position: -9.4em -5em
-
-  .process-efficiency .process-icon
-    background-position: -14.4em -5em
-
-  .process-creativity .process-icon
-    background-position: -19.4em -5em
-
-  .process-accuracy .process-icon
-    background-position: -24.4em -5em
