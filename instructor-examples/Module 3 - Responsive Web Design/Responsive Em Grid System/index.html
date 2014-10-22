@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title></title>
+  <title>Responsive Em Grid</title>
 
-  <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" />
-  <link rel="stylesheet" type="text/css" href="stylesheets/style.css" />
+  <link rel="stylesheet" type="text/css" href="assets/vendor/normalize.css" />
+  <link rel="stylesheet" type="text/css" href="assets/stylesheets/style.css" />
 
   <!--[if lt IE 9]>
-    <script src="javascripts/html5shiv.min.js"></script>
-    <script src="javascripts/respond.min.js"></script>
+    <script src="assets/vendor/html5shiv.min.js"></script>
+    <script src="assets/vendor/respond.min.js"></script>
   <![endif]-->
 
 
@@ -21,46 +21,81 @@
   <header></header>
 
   <div class="container">
-    <div class="row">
-      <div class="column">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et quidem saepe quaerimus verbum Latinum par Graeco et quod idem valeat; Sin kakan malitiam dixisses, ad aliud nos unum certum vitium consuetudo Latina traduceret. Ergo illi intellegunt quid Epicurus dicat, ego non intellego? Duo Reges: constructio interrete. Sin aliud quid voles, postea. Illi enim inter se dissentiunt. Potius inflammat, ut coercendi magis quam dedocendi esse videantur. Itaque et manendi in vita et migrandi ratio omnis iis rebus, quas supra dixi, metienda.</p>
-      </div>
-      <div class="column">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ubi ut eam caperet aut quando? Potius inflammat, ut coercendi magis quam dedocendi esse videantur. Beatum, inquit. Hic nihil fuit, quod quaereremus. Satisne ergo pudori consulat, si quis sine teste libidini pareat?</p>
-      </div>
-      <div class="column">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Simus igitur contenti his. Obsecro, inquit, Torquate, haec dicit Epicurus? Quoniam, si dis placet, ab Epicuro loqui discimus. Sic consequentibus vestris sublatis prima tolluntur. Duo Reges: constructio interrete. Videamus animi partes, quarum est conspectus illustrior; Quid enim de amicitia statueris utilitatis causa expetenda vides.</p>
-      </div>
-      <div class="column">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duae sunt enim res quoque, ne tu verba solum putes. Quasi ego id curem, quid ille aiat aut neget. Aeque enim contingit omnibus fidibus, ut incontentae sint. Quamquam id quidem licebit iis existimare, qui legerint. Quid enim de amicitia statueris utilitatis causa expetenda vides.</p>
-      </div>
-      <div class="column">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </div>
-      <div class="column">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed haec omittamus; An hoc usque quaque, aliter in vita? Quod autem ratione actum est, id officium appellamus. Duo Reges: constructio interrete. Videsne, ut haec concinant? Dolere malum est: in crucem qui agitur, beatus esse non potest.</p>
-      </div>
-      <div class="column">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urgent tamen et nihil remittunt. Sed tamen omne, quod de re bona dilucide dicitur, mihi praeclare dici videtur. Quae quidem sapientes sequuntur duce natura tamquam videntes; At iam decimum annum in spelunca iacet. Quid ait Aristoteles reliquique Platonis alumni? Sed id ne cogitari quidem potest quale sit, ut non repugnet ipsum sibi.</p>
-      </div>
-      <div class="column">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dempta enim aeternitate nihilo beatior Iuppiter quam Epicurus; Videamus animi partes, quarum est conspectus illustrior; Num igitur utiliorem tibi hunc Triarium putas esse posse, quam si tua sint Puteolis granaria? Illa sunt similia: hebes acies est cuipiam oculorum, corpore alius senescit;</p>
-      </div>
-      <div class="column">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quid, quod res alia tota est? Haec bene dicuntur, nec ego repugno, sed inter sese ipsa pugnant. Tecum optime, deinde etiam cum mediocri amico. Venit enim mihi Platonis in mentem, quem accepimus primum hic disputare solitum; Duo Reges: constructio interrete. Hoc positum in Phaedro a Platone probavit Epicurus sensitque in omni disputatione id fieri oportere.</p>
-      </div>
-      <div class="column">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Si quicquam extra virtutem habeatur in bonis. Quare ad ea primum, si videtur; Atque haec coniunctio confusioque virtutum tamen a philosophis ratione quadam distinguitur. Recte, inquit, intellegis. Non enim ipsa genuit hominem, sed accepit a natura inchoatum. Primum in nostrane potestate est, quid meminerimus? Proclivi currit oratio. Et ais, si una littera commota sit, fore tota ut labet disciplina.</p>
-      </div>
-      <div class="column">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facillimum id quidem est, inquam. Quod autem in homine praestantissimum atque optimum est, id deseruit. Ostendit pedes et pectus.</p>
-      </div>
-    </div> <!-- /.row -->
+    <ul class="quotes row">
+      <li class="quote quote-1 column">
+        <p>
+          <q>We are all inventors, each sailing out on a voyage of discovery, guided each by a private chart, of which there is no duplicate. The world is all gates, all opportunities.</q>
+          <cite>Ralph Waldo Emerson</cite>
+        </p>
+      </li>
+      <li class="quote quote-2 column">
+        <p>
+          <q>When you get into a tight place and everything goes against you, till it seems you could not hang on a minute longer, never give up then, for that is just the place and time that the tide will turn.</q>
+          <cite>Harriet Beecher Stowe</cite>
+        </p>
+      </li>
+      <li class="quote quote-3 column">
+        <p>
+          <q>Without inspiration the best powers of the mind remain dormant. There is a fuel in us which needs to be ignited with sparks.</q>
+          <cite>Johann Gottfried Von Herder</cite>
+        </p>
+      </li>
+      <li class="quote quote-4 column">
+        <p>
+          <q>Hope is like the sun, which, as we journey toward it, casts the shadow of our burden behind us.</q>
+          <cite>Samuel Smiles</cite>
+        </p>
+      </li>
+      <li class="quote quote-5 column">
+        <p>
+          <q>If you want to succeed in the world must make your own opportunities as you go on. The man who waits for some seventh wave to toss him on dry land will find that the seventh wave is a long time a coming. You can commit no greater folly than to sit by the roadside until some one comes along and invites you to ride with him to wealth or influence.</q>
+          <cite>John B. Gough</cite>
+        </p>
+      </li>
+      <li class="quote quote-6 column">
+        <p>
+          <q>In every difficult situation is potential value. Believe this, then begin looking for it.</q>
+          <cite>Norman Vincent Peale</cite>
+        </p>
+      </li>
+      <li class="quote quote-7 column">
+        <p>
+          <q>If you have built castles in the air, your work need not be lost; that is where they should be. Now put foundations under them.</q>
+          <cite>Henry David Thoreau</cite>
+        </p>
+      </li>
+      <li class="quote quote-8 column">
+        <p>
+          <q>To find what you seek in the road of life, the best proverb of all is that which says: 'Leave no stone unturned.'</q>
+          <cite>Edward Bulwer Lytton</cite>
+        </p>
+      </li>
+      <li class="quote quote-9 column">
+        <p>
+          <q>The more difficulties one has to encounter, within and without, the more significant and the higher in inspiration his life will be.</q>
+          <cite>Horace Bushnell</cite>
+        </p>
+      </li>
+      <li class="quote quote-10 column">
+        <p>
+          <q>Life has no smooth road for any of us; and in the bracing atmosphere of a high aim the very roughness stimulates the climber to steadier steps, till the legend, over steep ways to the stars, fulfills itself.</q>
+          <cite>W. C. Doane</cite>
+        </p>
+      </li>
+      <li class="quote quote-11 column">
+        <p>
+          <q>I have not the shadow of a doubt that any man or woman can achieve what I have, if he or she will make the same effort, and have the same hope and faith.</q>
+          <cite>Mahatma Gandhi</cite>
+        </p>
+      </li>
+      <li class="quote quote-12 column">
+        <p>
+          <q>We are all faced with a series of great opportunities - brilliantly disguised as insoluable problems.</q>
+          <cite>John Gardner</cite>
+        </p>
+      </li>
+
+    </ul> <!-- /.row -->
   </div> <!-- /.container -->
 
 
